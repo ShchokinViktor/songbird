@@ -1,0 +1,18 @@
+//utils
+@import "./styles/utils/normalize";
+@import "./styles/utils/animations";
+@import "./styles/utils/variables";
+@import "./styles/utils/breakpoints";
+@import "./styles/utils/typography";
+
+//components
+@import "./styles/components/btns";
+@import "./styles/components/audio";
+
+//layout
+@import "./styles/layout/general";
+@import "./styles/layout/home/home";
+@import "./styles/layout/quiz/quiz";
+@import "./styles/layout/quiz/question";
+@import "./styles/layout/quiz/answer";
+@import "./styles/layout/win/win";

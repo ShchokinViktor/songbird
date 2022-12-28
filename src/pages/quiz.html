@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../../public/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+    <title>SongBird</title>
+  </head>
+  <body>
+    <div class="quiz__container container">
+      <header class="quiz__header">
+        <div class="quiz__header-top">
+          <a class="quiz__header-link" href="./index.html"><h2 class="quiz__title title">Song<span>Bird</span></h1></a>
+          <div class="quiz__score">Счет: <span>0</span></div>
+        </div>
+        <ul class="quiz__levels-list">
+          <li class="quiz__level-item">Разминка</li>
+          <li class="quiz__level-item">Воробьиные</li>
+          <li class="quiz__level-item">Лесные птицы</li>
+          <li class="quiz__level-item">Певчие птицы</li>
+          <li class="quiz__level-item">Хищные птицы</li>
+          <li class="quiz__level-item">Морские птицы</li>
+        </ul>
+      </header>
+
+      <main class="quiz__main">
+        <div class="question">
+          <div class="question__img-holder">
+            <img src="../assets/img/crow.jpg" alt="bird">
+          </div>
+          <div class="question__info">
+            <div class="question__bird-name">Ворон</div>
+            <div class="question__audio audio">
+              <audio type="range">
+              <div class="audio__time">
+                <div class="audio__start">00:00</div>
+                <div class="audio__start">03:40</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="answer">
+          <ul class="answer__birds-list">
+            <!-- <li class="answer__birds-item answer__birds-item_true"><button class="answer__btn">Ворон</button></li>
+            <li class="answer__birds-item"><button class="answer__btn">Журавль</button></li>
+            <li class="answer__birds-item answer__birds-item_false"><button class="answer__btn">Ласточка</button></li>
+            <li class="answer__birds-item"><button class="answer__btn">Козодой</button></li>
+            <li class="answer__birds-item answer__birds-item_false"><button class="answer__btn">Кукушка</button></li>
+            <li class="answer__birds-item"><button class="answer__btn">Синица</button></li> -->
+          </ul>
+
+          <div class="answer__block">
+            <!-- <div class="answer__top">
+              <div class="answer__img-holder">
+                <img src="../assets/img/crow.jpg" alt="bird">
+              </div>
+              <div class="answer__info">
+                <div class="answer__bird-name">Ворон</div>
+                <div class="answer__bird-subtitle">Colos mondeula</div>
+                <div class="answer__audio audio">
+                  <input class="audio__input" type="range">
+                  <div class="audio__time">
+                    <div class="audio__start">00:00</div>
+                    <div class="audio__start">03:40</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="answer__bottom">
+              <p class="answer__bird-text">Слово «галка» произошло из старославянского языка и переводится как «чёрный». Этим словом часто называют воронов или других черных птиц. Латинское название галки «monedula» связывают со словами монета за любовь птицы к блестящим и ярким вещам.
+              </p>
+            </div> -->
+            <!-- <div class="answer__empty">Прослушайте плеер.<br>Выберите <span>птицу</span> из списка</div> -->
+          </div>
+        </div>
+
+        <div class="quiz__btn-holder">
+          <button disabled class="quiz__btn btn">Следующий уровень</button>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="../js/quiz.js"></script>
+  </body>
+</html>

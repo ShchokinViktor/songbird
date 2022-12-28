@@ -1,0 +1,43 @@
+.question {
+  display: flex;
+  border: $border;
+  padding: 20px 35px;
+  margin-bottom: 20px;
+
+  @include lg {
+    padding: 20px;
+  }
+
+  @include sm {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  // &__info {
+  // }
+
+  &__bird-name {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+
+  &__img-holder {
+    border-radius: 15px;
+    overflow: hidden;
+    margin-right: 40px;
+    height: 162px;
+
+    img {
+      width: 243px;
+      height: 100%;
+    }
+
+    @include sm {
+      margin: 0 auto;
+    }
+  }
+
+  // &__audio {
+  // }
+}

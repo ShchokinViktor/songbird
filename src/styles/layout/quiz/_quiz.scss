@@ -1,0 +1,102 @@
+.quiz {
+  &__container {
+    padding-top: 50px;
+
+    @include xl {
+      padding-top: 10px;
+    }
+  }
+
+  &__header {
+    margin-bottom: 25px;
+  }
+
+  &__header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include sm {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__header-link {
+    text-decoration: none;
+    color: $black;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 84px;
+    animation: none;
+
+    &:hover {
+      animation: $textChange;
+    }
+
+    @include sm {
+      font-size: 48px;
+    }
+  }
+
+  &__score {
+    font-size: 42px;
+
+    span {
+      color: $red;
+    }
+  }
+
+  &__levels-list {
+    display: flex;
+    justify-content: space-between;
+
+    @include lg {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      justify-items: center;
+    }
+  }
+
+  &__level-item {
+    font-size: 28px;
+    border: $border;
+    padding: 10px 0;
+    max-width: 170px;
+    width: 100%;
+    text-align: center;
+
+    &_active {
+      background-color: $red;
+      color: #fff;
+      border-color: $red;
+    }
+
+    @include sm {
+      font-size: 18px;
+    }
+  }
+
+  // &__main {
+  // }
+
+  // &__btn-holder {
+  // }
+
+  &__btn {
+    @include btn(28px, $red, $red, #fff);
+    width: 100%;
+    animation: $textChange;
+    margin-bottom: 20px;
+
+    &:disabled {
+      animation: none;
+      cursor: default;
+      background-color: $grey;
+      border-color: $grey;
+      color: $black;
+    }
+  }
+}

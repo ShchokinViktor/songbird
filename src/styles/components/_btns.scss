@@ -1,0 +1,28 @@
+@mixin btn(
+  $fontSize: 48px,
+  $borderColor: $black,
+  $backgrounColor: transparent,
+  $color: $black
+) {
+  font-size: $fontSize;
+  font-weight: 400;
+  color: $color;
+  cursor: pointer;
+
+  padding: 5px 0;
+  width: 220px;
+  border: 1px solid $borderColor;
+  background-color: $backgrounColor;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $red;
+    color: #fff;
+    border-color: $red;
+    animation: $textChange;
+  }
+
+  &:active {
+    background-color: $redDark;
+  }
+}
